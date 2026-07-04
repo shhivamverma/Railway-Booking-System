@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking History | Railway Ticket Booking</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="site-shell history-shell">
+    <header class="site-header">
+      <nav class="nav-bar" aria-label="History navigation">
+        <a class="brand-logo" href="index.html">
+          <span class="brand-mark">IR</span>CTC
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="history.html">History</a></li>
+        </ul>
+        <a class="nav-button" href="index.html">Back to Home</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-heading">
+        <h1>Booking History</h1>
+        <p>Review all of your saved ticket bookings and cancel any ticket if needed.</p>
+      </section>
+
+      <section class="history-page-grid">
+        <article class="history-card">
+          <div id="history-list">Loading bookings...</div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="src/js/history.js"></script>
+</body>
+</html>

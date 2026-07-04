@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IRCTC-Inspired Railway Booking</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <nav class="nav-bar" aria-label="Main navigation">
+        <a class="brand-logo" href="#home">
+          <span class="brand-mark">IR</span>CTC
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#search">Book Ticket</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="#summary">Summary</a></li>
+        </ul>
+        <a class="nav-button" href="#search">Book Now</a>
+      </nav>
+
+      <section class="hero-banner" id="home">
+        <div class="hero-copy">
+          <span class="eyebrow">Book Your Journey</span>
+          <h1>Fast, safe and smart railway ticket booking.</h1>
+          <p>Experience an IRCTC-inspired homepage with a clean search workflow, instant train results, and responsive boarding-ready layout.</p>
+          <div class="hero-stats">
+            <div>
+              <strong>12K+</strong>
+              <span>Successful bookings</span>
+            </div>
+            <div>
+              <strong>150+</strong>
+              <span>Daily routes available</span>
+            </div>
+            <div>
+              <strong>99.9%</strong>
+              <span>On-time journeys</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card" id="search" aria-labelledby="search-heading">
+          <h2 id="search-heading">Search Trains</h2>
+          <form id="booking-form" class="booking-form">
+            <div class="form-grid">
+              <label for="origin">From</label>
+              <select id="origin" name="origin" required></select>
+
+              <label for="destination">To</label>
+              <select id="destination" name="destination" required></select>
+
+              <label for="travel-date">Journey Date</label>
+              <input type="date" id="travel-date" name="travelDate" required />
+
+              <label for="travel-class">Class</label>
+              <select id="travel-class" name="travelClass" required></select>
+
+              <label for="passenger-name">Name</label>
+              <input type="text" id="passenger-name" name="passengerName" placeholder="Passenger full name" required />
+
+              <label for="passenger-count">Passengers</label>
+              <input type="number" id="passenger-count" name="passengerCount" min="1" max="6" value="1" required />
+            </div>
+
+            <button type="submit" class="primary-button">Find Trains</button>
+          </form>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="feature-section" id="services" aria-labelledby="services-heading">
+        <h2 id="services-heading">Why choose our booking portal?</h2>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Live train matching</h3>
+            <p>Quickly find trains that match your route using the modern search interface.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Secure journey planning</h3>
+            <p>Designed for a future full-stack migration with clean state handling and modular code.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Responsive design</h3>
+            <p>Looks great on desktop, tablet, and mobile devices with a polished modern style.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="results-panel" aria-labelledby="results-heading">
+        <h2 id="results-heading">Available Trains</h2>
+        <div id="train-list" class="train-list"></div>
+      </section>
+
+      <section class="summary-panel" id="summary" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Booking Summary</h2>
+        <div id="booking-summary" class="summary-card">
+          <p>No booking selected yet.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="src/js/app.js"></script>
+</body>
+</html>

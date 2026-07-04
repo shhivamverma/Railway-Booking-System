@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticket Confirmation | Railway Booking</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="site-shell confirmation-shell">
+    <header class="site-header">
+      <nav class="nav-bar" aria-label="Confirmation navigation">
+        <a class="brand-logo" href="index.html">
+          <span class="brand-mark">IR</span>CTC
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="confirmation.html">Confirmation</a></li>
+        </ul>
+        <button class="nav-button" id="print-button">Print Ticket</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-heading">
+        <h1>Ticket Confirmation</h1>
+        <p>Your PNR and seat details are ready. Please review the ticket and use print to save a copy.</p>
+      </section>
+
+      <section class="confirmation-card" id="confirmation-card">
+        <div id="ticket-details"></div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="src/js/confirmation.js"></script>
+</body>
+</html>

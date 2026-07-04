@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Passenger Booking | Railway Ticket Booking</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="site-shell booking-shell">
+    <header class="site-header">
+      <nav class="nav-bar" aria-label="Booking navigation">
+        <a class="brand-logo" href="index.html">
+          <span class="brand-mark">IR</span>CTC
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="history.html">History</a></li>
+        </ul>
+        <a class="nav-button" href="index.html">Back to Home</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-heading">
+        <h1>Passenger Booking</h1>
+        <p>Enter passenger details, add multiple travelers, and save your booking securely in localStorage.</p>
+      </section>
+
+      <section class="booking-page-grid">
+        <article class="form-card">
+          <h2>Booking details</h2>
+          <form id="booking-form" novalidate>
+            <div class="form-group">
+              <label for="train-number">Train Number</label>
+              <input type="text" id="train-number" name="trainNumber" placeholder="e.g. 12612" required />
+            </div>
+
+            <div class="form-group">
+              <label for="train-name">Train Name</label>
+              <input type="text" id="train-name" name="trainName" placeholder="e.g. Rajdhani Express" required />
+            </div>
+
+            <div class="grid-two-columns">
+              <div class="form-group">
+                <label for="source-station">Source Station</label>
+                <input type="text" id="source-station" name="sourceStation" placeholder="Source" required />
+              </div>
+              <div class="form-group">
+                <label for="destination-station">Destination Station</label>
+                <input type="text" id="destination-station" name="destinationStation" placeholder="Destination" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="journey-date">Journey Date</label>
+              <input type="date" id="journey-date" name="journeyDate" required />
+            </div>
+
+            <div class="contact-section">
+              <h3>Contact details</h3>
+              <div class="grid-two-columns">
+                <div class="form-group">
+                  <label for="contact-email">Email</label>
+                  <input type="email" id="contact-email" name="contactEmail" placeholder="you@example.com" required />
+                </div>
+                <div class="form-group">
+                  <label for="contact-phone">Phone</label>
+                  <input type="tel" id="contact-phone" name="contactPhone" placeholder="10-digit mobile" required pattern="[0-9]{10}" />
+                </div>
+              </div>
+            </div>
+
+            <section class="passenger-block">
+              <div class="passenger-header">
+                <h3>Passengers</h3>
+                <button id="add-passenger" type="button" class="secondary-button">Add Passenger</button>
+              </div>
+              <div id="passenger-list" class="passenger-list"></div>
+            </section>
+
+            <p id="form-error" class="error-text" aria-live="polite"></p>
+            <button type="submit" class="primary-button">Save Booking</button>
+          </form>
+        </article>
+
+        <article class="history-panel">
+          <h2>Saved bookings</h2>
+          <div id="booking-history" class="history-list">
+            <p class="empty-state">No saved bookings yet.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="src/js/booking.js"></script>
+</body>
+</html>
