@@ -24,14 +24,6 @@
 
 ---
 
-## 📸 Preview
-
-![Railway Booking System](<"C:\Users\SHIVAM VERMA\Downloads\sss.png">
-)
-
-
----
-
 ## ✨ Features
 
 - 🔍 Search trains based on source and destination
