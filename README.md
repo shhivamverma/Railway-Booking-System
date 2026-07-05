@@ -26,9 +26,9 @@
 
 ## 📸 Preview
 
-![Railway Booking System](https://placehold.co/1200x600?text=Railway+Ticket+Booking+System)
+![Railway Booking System](<img width="479" height="292" alt="image" src="https://github.com/user-attachments/assets/11f0efe9-7eab-433f-9613-b523d662fd2f" />
+)
 
-> Replace this image with an actual screenshot of your homepage.
 
 ---
 
