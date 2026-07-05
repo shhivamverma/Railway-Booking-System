@@ -26,7 +26,7 @@
 
 ## 📸 Preview
 
-![Railway Booking System](<img width="479" height="292" alt="image" src="https://github.com/user-attachments/assets/11f0efe9-7eab-433f-9613-b523d662fd2f" />
+![Railway Booking System](<"C:\Users\SHIVAM VERMA\Downloads\sss.png">
 )
 
 
